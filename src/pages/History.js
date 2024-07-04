@@ -1,3 +1,5 @@
+// src/pages/History.js
+
 import React from 'react';
 import image1 from '../assets/graphics/pages/history/qian_xuesen.jpg';
 import image2 from '../assets/graphics/pages/history/cybernetics_feedback_loop_models.png';

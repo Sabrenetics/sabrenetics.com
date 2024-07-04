@@ -1,3 +1,5 @@
+// src/pages/Homepage.js
+
 import React from 'react';
 
 const Homepage = () => {
@@ -9,11 +11,11 @@ const Homepage = () => {
                 </div>
                 <div className="column2">
                     <div style={{ textAlign: 'center' }}>
-                        <h1>Calling all Gamers</h1>
+                        <h1>SABRENETICS</h1>
                     </div>
                     <br />
                     <p>
-                        Welcome to the nichest gaming developer.
+                    "Sabrenetics is the world's first cyberware and cyborg clinic for research, standardisation, education, availability and support on Cyberware, Cyborgs and Transhumans."
                     </p>
                 </div>
                 <div className="column3">
