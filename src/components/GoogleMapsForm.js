@@ -22,7 +22,7 @@ const GoogleMapsForm = () => {
 
     // Load Google Maps API script dynamically
     const googleMapsScript = document.createElement('script');
-    googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyBGV2v0V2dO_fjgq02Y-EAYYV7lheaCrqQ`;
+    googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=KEY_GOES_HERE`;
     googleMapsScript.async = true;
     googleMapsScript.defer = true;
     googleMapsScript.onload = initMap; // Call initMap() once script is loaded
