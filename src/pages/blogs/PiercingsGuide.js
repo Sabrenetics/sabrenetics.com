@@ -1,8 +1,8 @@
-// src/pages/blogs/Terminologies.js
+// src/pages/blogs/PiercingsGuide.js
 
 import React from 'react';
 
-const Terminologies = () => {
+const PiercingsGuide = () => {
   return (
     <div>
       <div className='main'>
@@ -11,7 +11,7 @@ const Terminologies = () => {
           <br />
           <br />
           <div style={{ textAlign: 'center' }}>
-            <h1>Terminologies</h1>
+            <h1>Piercings Guide</h1>
           </div>
           <p>
             Our Events are hosted locally in Australia and globally through online live video feeds.
@@ -25,4 +25,4 @@ const Terminologies = () => {
   );
 };
 
-export default Terminologies;
+export default PiercingsGuide;
