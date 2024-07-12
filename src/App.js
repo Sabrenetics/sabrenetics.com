@@ -23,6 +23,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import PurchaseAndRefundPolicy from './pages/PurchaseAndRefundPolicy';
 import SignUp from './pages/SignUp';
 import TermsAndConditions from './pages/TermsAndConditions';
+import WritePublishBook from './pages/WritePublishBook';
 import './App.css';
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
               <Route path="/privacypolicy" element={<PrivacyPolicy />} />
               <Route path="/PurchaseAndRefundPolicy" element={<PurchaseAndRefundPolicy />} />
               <Route path="/termsandconditions" element={<TermsAndConditions />} />
+              <Route path="/writepublishbook" element={<WritePublishBook />} />
               <Route path="/signup" element={<SignUp />} />
               {!authToken ? (
                 <Route path="/login" element={<Login />} />
