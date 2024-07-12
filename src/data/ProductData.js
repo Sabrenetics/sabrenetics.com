@@ -1,9 +1,17 @@
 // src/data/ProductData.js
 
-import CCCSS251 from '../assets/graphics/products/books/Cybernetics Cyberware and Cyborgs - Sumeet singh - front cover.png';
-import CCCSS252 from '../assets/graphics/products/books/Cybernetics Cyberware and Cyborgs - Sumeet singh - back cover.png';
-import CASS221 from '../assets/graphics/products/books/Cyborg Alphabet - Sumeet Singh - front cover.jpg';
-import CASS222 from '../assets/graphics/products/books/Cyborg Alphabet - Sumeet Singh - back cover.jpg';
+import id1a from '../assets/graphics/products/books/1a.png';
+import id1b from '../assets/graphics/products/books/1b.png';
+import id2a from '../assets/graphics/products/books/2a.png';
+import id2b from '../assets/graphics/products/books/2b.png';
+import id3a from '../assets/graphics/products/books/3a.png';
+import id3b from '../assets/graphics/products/books/3b.png';
+import id4a from '../assets/graphics/products/books/4a.jpg';
+import id4b from '../assets/graphics/products/books/4b.jpg';
+import id5a from '../assets/graphics/products/books/5a.jpg';
+import id5b from '../assets/graphics/products/books/5b.jpg';
+import id6a from '../assets/graphics/products/books/6a.jpg';
+import id6b from '../assets/graphics/products/books/6b.jpg';
 
 const ProductData = [
   {
@@ -21,7 +29,7 @@ const ProductData = [
     publicationDate: "TBD",
     audience: "General",
     genre: "Non Fiction",
-    images: [CCCSS251, CCCSS252]
+    images: [id1a, id1b]
   },
   {
     id: 2,
@@ -37,7 +45,7 @@ const ProductData = [
     publicationDate: "TBD",
     audience: "General",
     genre: "Non Fiction",
-    images: [CCCSS251, CCCSS252]
+    images: [id2a, id2b]
   },
   {
     id: 3,
@@ -54,7 +62,7 @@ const ProductData = [
     publicationDate: "TBD",
     audience: "General",
     genre: "Non Fiction",
-    images: [CCCSS251, CCCSS252]
+    images: [id3a, id3b]
   },
   {
     id: 4,
@@ -71,7 +79,7 @@ const ProductData = [
     publicationDate: "January 1st, 2023",
     audience: "Children",
     genre: "Non Fiction",
-    images: [CASS221, CASS222]
+    images: [id4a, id4b]
   },
   {
     id: 5,
@@ -87,7 +95,7 @@ const ProductData = [
     publicationDate: "January 1st, 2023",
     audience: "Children",
     genre: "Non Fiction",
-    images: [CASS221, CASS222]
+    images: [id5a, id5b]
   },
   {
     id: 6,
@@ -104,7 +112,7 @@ const ProductData = [
     publicationDate: "TBD",
     audience: "Children",
     genre: "Non Fiction",
-    images: [CASS221, CASS222]
+    images: [id6a, id6b]
   }
 ];
 
