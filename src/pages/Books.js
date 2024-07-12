@@ -15,57 +15,56 @@ const Books = () => {
     });
   };
 
-  // Find the item based on its ID
-  const findItemById = (itemId) => {
-    return ProductData.find(item => item.id === itemId);
-  };
-
   return (
     <div>
       <div className='main'>
         <div className="column1"></div>
-        <div className="column2">
+        <div className="column2" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
           <br />
           <br />
-          <div style={{ textAlign: 'center' }}>
+          <div style={{ textAlign: 'center', gridColumn: '1' }}>
             <h1>Books</h1>
           </div>
           <br />
-          {ProductData.map(item => (
-            <div key={item.id} style={{ marginBottom: '40px' }}>
-              <h3>{item.name}</h3>
-              <p>{item.description}</p>
-              <div style={{ textAlign: 'center' }}>
-                {item.images.map((image, index) => (
+          {ProductData.map(product => (
+            <div key={product.id} style={{ marginBottom: '40px' }}>
+              <h3>{product.name}</h3>
+              <p>{product.description}</p>
+              <div style={{ textAlign: 'center', marginBottom: '20px' }}>
+                {product.images.map((image, index) => (
                   <React.Fragment key={index}>
-                    <img src={image} alt={`${item.name} ${index + 1}`} style={{ maxWidth: '100%', height: 'auto' }} />
+                    <img src={image} alt={`${product.name} ${index + 1}`} className="product-img" />
                     <br />
                     <br />
                   </React.Fragment>
                 ))}
               </div>
-              <h4>Purchase Links</h4>
-              <p>
-                Paid version available here
+              <h4>Purchase Link</h4>
+              <div style={{ border: '1px solid #ccc', padding: '10px' }}>
+                <strong>{product.type}</strong>: {product.price} AUD
+                <br />
+                ISBN: {product.isbn}
+                <br />
+                Publisher: {product.publisher}
+                <br />
+                Language: {product.language}
+                <br />
+                Trim Size: {product.trim}
+                <br />
+                Page Count: {product.pageCount}
+                <br />
+                Publication Date: {product.publicationDate}
+                <br />
+                Audience: {product.audience}
+                <br />
+                Genre: {product.genre}
+                <br />
                 <AddCartButton
-                  item={findItemById(item.id)} // Pass the correct item based on ID
+                  item={product} // Pass the product item itself
+                  format={product} // Pass the entire product as format
                   onAddToCart={addToCart}
                 />
-              </p>
-              <h4>Product details</h4>
-              <ul>
-                <li>OS:
-                  <ul>
-                    {item.ProductDetails.os.map(os => (
-                      <li key={os}>{os}</li>
-                    ))}
-                  </ul>
-                </li>
-                <li>Processor: {item.ProductDetails.processor}</li>
-                <li>RAM: {item.ProductDetails.ram}</li>
-                <li>Graphics: {item.ProductDetails.graphics}</li>
-                <li>Storage: {item.ProductDetails.storage}</li>
-              </ul>
+              </div>
               <br />
               <br />
             </div>

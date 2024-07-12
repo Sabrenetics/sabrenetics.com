@@ -97,14 +97,19 @@ const Cart = () => {
             <h1>Cart</h1>
           </div>
           <br />
-          {cartItems.map(item => {
-            const product = getItemDetails(item.id);
+          {cartItems.map(cartItem => {
+            const product = getItemDetails(cartItem.id);
+            if (!product) {
+              return null; // Skip rendering if product is not found
+            }
             return (
-              <div key={item.id}>
-                <h3>{product ? product.name : 'Unknown'}</h3>
-                <p>Price: ${product ? product.price.toFixed(2) : '0.00'}</p>
-                <p>Quantity: {item.quantity}</p>
-                <button onClick={() => removeFromCart(item.id, item.quantity)}>Remove All</button>
+              <div key={cartItem.id}>
+                <h3>{product.name}</h3>
+                <p>ID: {cartItem.id}</p>
+                <p>Price: ${product.price.toFixed(2)}</p>
+                <p>Quantity: {cartItem.quantity}</p>
+                <p>Format: {cartItem.format}</p>
+                <button onClick={() => removeFromCart(cartItem.id, cartItem.quantity)}>Remove All</button>
                 <hr />
               </div>
             );
