@@ -1,24 +1,6 @@
 // ../../pages/blogs/WritePublishBook.js
 
 import React from 'react';
-import title from '../../assets/graphics/pages/blogs/WritePublishBook/title.png';
-import image1 from '../../assets/graphics/pages/blogs/WritePublishBook/1.png';
-import image8 from '../../assets/graphics/pages/blogs/WritePublishBook/8.1.png';
-import image8part2 from '../../assets/graphics/pages/blogs/WritePublishBook/8.2.png';
-import image10 from '../../assets/graphics/pages/blogs/WritePublishBook/10.png';
-import image13 from '../../assets/graphics/pages/blogs/WritePublishBook/13.png';
-import image14 from '../../assets/graphics/pages/blogs/WritePublishBook/14.1.png';
-import image14part2 from '../../assets/graphics/pages/blogs/WritePublishBook/14.2.png';
-import image14part3 from '../../assets/graphics/pages/blogs/WritePublishBook/14.3.png';
-import image16 from '../../assets/graphics/pages/blogs/WritePublishBook/16.png';
-import image22 from '../../assets/graphics/pages/blogs/WritePublishBook/22.1.png';
-import image22part2 from '../../assets/graphics/pages/blogs/WritePublishBook/22.2.png';
-import image23 from '../../assets/graphics/pages/blogs/WritePublishBook/23.1.png';
-import image23part2 from '../../assets/graphics/pages/blogs/WritePublishBook/23.2.png';
-import image27 from '../../assets/graphics/pages/blogs/WritePublishBook/27.png';
-import image31 from '../../assets/graphics/pages/blogs/WritePublishBook/31.1.png';
-import image31part2 from '../../assets/graphics/pages/blogs/WritePublishBook/31.2.png';
-import image31part3 from '../../assets/graphics/pages/blogs/WritePublishBook/31.3.png';
 
 const WritePublishBook = () => {
     return (
@@ -30,7 +12,7 @@ const WritePublishBook = () => {
                     <br />
                     <div style={{ textAlign: 'center' }}>
                         <h1>How to write and Publish a book</h1>
-                        <img src={title} alt="Books on a shelf" />
+                        <img src='/assets/graphics/pages/blogs/WritePublishBook/title.png' alt="Books on a shelf" />
                     </div>
                     <p><b>Updated:</b> February 10th, 2023.</p>
 
@@ -91,7 +73,7 @@ const WritePublishBook = () => {
                     <p>For demonstration purposes we will use IngramSpark as the self-publisher but this guide can be changed to suit your needs.</p>
 
                     <p>1. <b>Writing a book</b> first requires typing your draft book also known as a manuscript in a digital format such as a Microsoft Word document. A rough guide of what pages to include in a book is a Front cover, imprint page (for copyrights, further information, etc.), (optional) acknowledgement page (Giving thanks to who inspired, helped or who the books dedicated to), (optional) table of contents, book interior (main contents) and back cover (with blurb usually 300 word description of book) and if necessary references, appendix etc. Anything you're unsure of or mistakes made can be escalated to the editor anytime. The illustrator and editor can decide which font to best use.book manuscript example page</p>
-                    <img src={image1} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/1.png' alt="Books on a shelf" />
                     <p>2. <b>Trim sizes</b> (Portrait, Square, Landscape, etc.) refer to the size of the printed book. Necessary step to ensure the most cost-effective print solution is found. Odd custom book sizes e.g. 14" x 14" are difficult to print and hence more expensive than a traditional 8.5" x 8.5" In general the trim size to choose depends on the audience of the book. e.g. Children's books are preferably square 8.5" x 8.5", or fiction novels are generally 5.5" x 8.5" to be easy to hold in one hand and read, whereas non-fiction books such as language learning guides are larger e.g. 6.5" x 9" where more eye space on the book is preferred for digesting the information on the page. 2 great visualisation resources to understand what a book would look like are Reedsy and for Children's book in particular a blog by a Brooke Vitale Editorial Services it's strongly important to realise that hardbacks have a fold on the side it's glued from. so the cover page image will have a crease on the side. This is normal, however some books to ensure to centre away from the crease and into the middle. This is an illustrator/editor decision based on the cover guidelines, have them look at examples of IngramSpark picture books photos online.</p>
 
                     <p>3. <b>Cover materials</b> are (Hardback, paperback, boardbook, dust jackets, leather etc.). Hardback books demand premium prices because of their cost to produce and durability and aesthetics they require a minimum amount of pages which will allow for a spine. Paperback books are made of cheap paper, bindings and weaker construction. For Children's books you will often see Boardbook used which is a method where all pages are thick boards that are strong, easier to clean and give an impression of holding wooden furniture. Dustjackets refer to the wrapping cover of the book, used for either promotion advertisement space or to protect the book cover for a more premium feeling.</p>
@@ -105,26 +87,26 @@ const WritePublishBook = () => {
                     <p>7. <b>Colour ranges</b> are (RGB, CMYK, or pantone) which are primarily a concern for the illustrator. Pantone refers to ink colours which don't translate well to monitor/screen viewing. Metallic pantone colours cannot be viewed accurately with an generic computer screen or tablet, the colour will need to be converted to an CMYK colour for accurate projection.</p>
 
                     <p>8. <b>Illustrations</b> Affordable digital and physical illustrators can be found on Fiverr illustrators or any artist can do. Choose someone longterm that can draw all the images with the same theme and design and have an easy way to contact for changes or additions in the future. The illustrator will also need to create a .print cover and other files using IngramSpark's file creation guide here. Digital modifiable illustrations carry the benefit of being able to modify the resolution, image, shape etc. anytime e.g. pictures drawn in popular digital drawing program Photoshop, can be saved in .psd file format and easily modified anytime.Illustration example IngramSpark print cover .pdf file example</p>
-                    <img src={image8} alt="Books on a shelf" />
-                    <img src={image8part2} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/8.1.png' alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/8.2.png' alt="Books on a shelf" />
                     <p>9. <b>Creating a publishing company</b> You may decide to create your own publishing company name and brand. The benefits allow an established brand to easily market books in the future. This is as simple as registering a business in your own country as a book publisher, then setting up a name, address for sending and delivering important documents and for book returns, this allows governments, companies, libraries, schools, etc.. to have a formal method to purchase your book following regulations. The cons are if your book does become famous, then it's unlikely that a famous, or prestigious publishing house will ever accept your book. Regardless the publishing company name you use becomes the name/logo in your imprint page, book cover, and for ISBN registration, marketing, and for IngramSpark.</p>
 
                     <p>10. <b>Imprint page</b> is usually the first page or before the inner cover. It entails the legal ownership of the book, disclaimers, acknowledgements (if not a separate page), publishing company details, where to find out more about the book, the author or other book editions and more. The Self-Publishing School has an free in-depth article on what exactly to include. Imprint page example</p>
-                    <img src={image10} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/10.png' alt="Books on a shelf" />
                     <p>11. <b>Translating</b> into other languages (using Dictionaries, Google Translate, Microsoft Word Translate, etc.) with trusted translators to verify using Fiverr and different independent firms where accuracy is paramount.</p>
 
                     <p>12. <b>Proofreading</b> reviewing and editing refer to the stage where your manuscript (draft book) is reviewed for justification, meaning, clarity, truth, quality, consistency and errors in spelling, grammar etc. to be addressed. There are 2 persons involved but some can both do the same task, a reviewer to read and review, and editor to read and make changes. Simple reviewing and editing can be done by friends or family, or professional paid independent reviewers/editors. E.g. we can use trusted sellers on Fiverr, or reviewing agencies such as Kirkus reviews. Repeat the review and editing stage until all issues and questions are answered.</p>
 
                     <p>13. <b>Formatting and Converting</b> the manuscript (book) from one format to another for print involves converting the .doc or .docx file to .pdf file format. For eBooks the same manuscript .doc etc. files are converted to .epub, or .mobi, .pdf, etc., file formats using Calibre which also ads metadata of the book's details to it. Calibre is a free multi-platform/OS software installed locally on your computer. Once installed, you can simply drag and drop your .pdf book into the software open area, and it will import the book. Then click "convert to eBook" option which will start a job to convert the book into a .epub file, a timer is shown at the bottom. When file is converted, you can click on the book and "edit metadata" to enter in details about, Title, Author, Author sort (surname, firstname naming convention), genre, details (isbn:xxxxxxxxxxxxx goes there), etc. You can then double click to open the file and test or drag and drop onto the desktop and load it into a connected e-reader to test .epub. Once satisfied you can choose to keep the cover separate, or join using the upload cover option, save book and drag and drop complete file onto your desktop again. If the process is difficult, consider following tutorials on Youtube or through an editor to format and convert the book for you. Image of Calibre a free ebook making software</p>
-                    <img src={image13} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/13.png' alt="Books on a shelf" />
                     <p>14. <b>ISBN Account creation</b> with your local ISBN registry website (e.g. Bowker for the USA) is necessary to purchase ISBNs (The unique 13 digit barcode number that allows your book to be tracked worldwide), applying barcodes to back cover of print files (for eBook's barcodes aren't necessary) and optionally applying non static QR codes, and finally entering Metadata of book into IngramSpark for retailers to use. Buy and apply an ISBN for each physical and epub book edition e.g. Hardback/paperback/epub 1st, 2nd, 3rd etc. you only need 1 epub book. Don't use free ISBNs provided by retailers. ISBNs can be extremely cheap if purchased in bulk. Barcodes only need to be applied to the back of printed books. Don't modify the barcode other than changing size. This is for retail physical book stock take scanning. It is important to make sure the publishing date and the availability option which by default should be set to Active record is correct. This may never change again in some search engines such as Google search results. Read further ahead to see best time to publish.  Metadata example  Australia's ISBN retailer Bowker Australian ISBN retailer and assignment website Bowker</p>
-                    <img src={image14} alt="Books on a shelf" />
-                    <img src={image14part2} alt="Books on a shelf" />
-                    <img src={image14part3} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/14.1.png' alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/14.2.png' alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/14.3.png' alt="Books on a shelf" />
                     <p>15. <b>Testing</b> your finished digital (eBook) editions on various physical devices such as Kobo, Kindle, iPad, etc. to ensure readability.</p>
 
                     <p>16. <b>Print and Digital</b> ready books requires creating 1 print interior .pdf file and 1 print cover .pdf file. For eBook, create 1 .epub file for book interior, and 1 .jpg file for eBook cover image.Sample files to upload</p>
-                    <img src={image16} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/16.png' alt="Books on a shelf" />
                     <p>17. <b>Handover of illustrations</b>, and metadata. Providing extra content for anniversary or special edition reprints such as storyboards, full editorial reviews (using Kirkus reviews, and through independent reviewers) (Using .pdf, .jpg and .doc file formats.</p>
 
                     <p>18. <b>Planning release dates</b>, publication date, first sale date is matching on every publishing system (Using Bowker, IngramSpark, local countries cataloguing system)</p>
@@ -136,11 +118,11 @@ const WritePublishBook = () => {
                     <p>21. <b>File sizes</b> eBook file sizes shouldn't exceed 1GB. However, don't compromise compressing a file if your precious media such as images will lose quality, because technology gets better every day and file size limits become meaningless. Focus on creating the best eBook you can, then decide if it really needs to be compressed. For cover files, IngramSpark has their own file size limits, its best to design the cover in Photoshop/Illustrator and store as .psd file and export to .jpg file format anytime for the specific upload requirement for printing physically or publishing online.</p>
 
                     <p>22. <b>Uploading your files</b> (1 print cover, 1 print interior, 1 eBook interior, 1 eBook cover) to IngramSpark to deliver to Amazon, Barnes & Nobles etc.) to be distributed worldwide and entering metadata. The final step is to approve and pay for agreement. Once finalised it till take up to 5 days for a response in which it can be approved again. If any mistakes occur you can click on book title and upload only the file that needs to be changed and continue, this will take up to another 5 days to approve. Once approved you will receive an email notification, go to the IngramSpark website then click to approve title. There are 2 options, one checkbox to make available for only you to order yourself called author copies (such as for testing/give always) and the other to enable both author copies and retailers for them to order from IngramSpark anytime they want. Subsequent book editions can be uploaded after the initial version which is logically all linked in the system via the ISBN, so repeat whole process again. IngramSpark website for uploading books for worldwide distribution</p>
-                    <img src={image22} alt="Books on a shelf" />
-                    <img src={image22part2} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/22.1.png' alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/22.2.png' alt="Books on a shelf" />
                     <p>23. <b>Author copy ordering</b> can be done from the Orders section of IngramSpark. You will see a screenshot similar to below with options for standard or express shipping as well as order quantity amount, options for PO numbers and email invoices in the next page and more. Depending on shipping option the fastest method usually takes up to 2 weeks. Remember to insert a email address for order processing and shipping updates.. Author copy order screen</p>
-                    <img src={image23} alt="Books on a shelf" />
-                    <img src={image23part2} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/23.1.png' alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/23.2.png' alt="Books on a shelf" />
                     <p>24. <b>Publishing / Release date</b> publish date = date book first published. Date of sale is the date book becomes available to purchase. Generally, these are left the same as default. Plan publishing date at least 6 weeks in advance to allow time to edit files and order a test copy (known as author copies).</p>
 
                     <p>25. <b>Revisions of metadata</b> can be edited anytime before and after. Revision file uploads can take up to 3 weeks of business days (~15days) to process.</p>
@@ -148,7 +130,7 @@ const WritePublishBook = () => {
                     <p>26. <b>Preorder</b> once metadata is submitted and paid for in IngramSpark, the ebook (but not print) will be available for pre-order and download across all major ebook retailers e.g. Kindle, Kobo, Apple books etc.</p>
 
                     <p>27. <b>Availability</b> Once both print and eBook are approved, and the published date is passed for GMT-7 Mountain Standard Time (MST). On publishing date/date of first sale, the eBook becomes available immediately worldwide. The print copy becomes available to purchase through retailers such as amazon.com generally 2-3 days after you approve print copy in IngramSpark. It can take up to a further several weeks before your book will be available across many retailers and review websites etc., so be patient. eBook available on Kobo</p>
-                    <img src={image27} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/27.png' alt="Books on a shelf" />
                     <p>28. <b>Cataloguing for libraries part 1</b> if legally required or desired you may need to send a print and/or eBook copy to your country’s pre-publication national library or government cataloguing services to ensure logo of catalogue availability can be imprinted in the imprint page if desires. (such as using N.E.D. if in Australia, CIP is in USA, National Library if in New Zealand, British Library for UK, LAC for Canada, etc.)</p>
 
                     <p>29. <b>Cataloguing for libraries part 2</b> If legally required by your country the first book copies of your new book called legal deposit are to be sent to your countries national library, and state libraries for cataloguing, safekeeping, copyright reasons, etc. (See above links)</p>
@@ -156,9 +138,9 @@ const WritePublishBook = () => {
                     <p>30. <b>Cheaper printing options</b> exist by using Chinese book printing services. These are usually found on aalibaba.com a wholesale Chinese supplier to customer relationship website.</p>
 
                     <p>31. <b>Author biography page</b> can be setup for Amazon for free using Amazon Author Central. This allows you to customise the viewing experience of your books on Amazon and allows free marketing of related products. After some time period e.g. 2 weeks, your book may be available in Goodreads you can sign up and take ownership of your books as the author and customise your page. It's recommended to also create another author biography website by purchasing a domain name and setting up a website such as through online services Shopify or Squarespace (paid), Wix or Wordpress (free) that you can use as a website for all your created works/books and again to promote more customer engagement and positivity.Amazon Author Central website      Amazon Author page       Google Author knowledge panel</p>
-                    <img src={image31} alt="Books on a shelf" />
-                    <img src={image31part2} alt="Books on a shelf" />
-                    <img src={image31part3} alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/31.1.png' alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/31.2.png' alt="Books on a shelf" />
+                    <img src='/assets/graphics/pages/blogs/WritePublishBook/31.3.png' alt="Books on a shelf" />
                     <p>32. <b>Reviews</b> books are best marketed through reviews. Having positive reviews across many popular book reviewing websites is the best way to get picked up for book signings, deals, etc. focus on book giveaways, having book clubs, reviewers, public receive free copies and giving them a link to leave positive reviews.</p>
 
                     <p>33. <b>Marketing</b> can be done by signing up to as many books related social media websites and creating posts. Engagement is the biggest metric to aim for to attract readers. Visit or contact brick and mortar stores and asks if you can sell your books, try to get book signings arranged at physical locations and conventions, get your name out there as much as possible. Buy a Lifesize cut-out of yourself or book and a foldable table and find somewhere public, set up a small stand and engage with the public, anything is better than nothing.</p>

@@ -1,8 +1,5 @@
-// src/components/Header.js
-
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import logoImage from '../assets/graphics/logos/Logo_PNG_RGB.png';
 
 const Header = ({ authToken, handleLogout }) => {
   const navigate = useNavigate();
@@ -15,7 +12,7 @@ const Header = ({ authToken, handleLogout }) => {
   return (
     <div className="header">
       <Link to="/">
-      <img src={logoImage} alt="Sabrenetics logo" className="logo" />
+        <img src="/assets/graphics/logos/Logo_PNG_RGB.png" alt="Sabrenetics logo" className="logo" />
       </Link>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>

@@ -1,8 +1,6 @@
-// src/pages/Cart.js
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import ProductData from '../data/ProductData';
+import Papa from 'papaparse';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -13,6 +11,24 @@ const Cart = () => {
   const [city, setCity] = useState('');
   const [postcode, setPostcode] = useState('');
   const [country, setCountry] = useState('');
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('/ProductData.csv')
+      .then(response => response.text())
+      .then(data => {
+        const parsedData = Papa.parse(data, { header: true, dynamicTyping: true }).data;
+        parsedData.forEach(product => {
+          // Ensure images field is defined and not empty before splitting
+          if (product.images) {
+            product.images = product.images.split('|').map(image => image.trim());
+          } else {
+            product.images = []; // Set to empty array if images field is undefined or empty
+          }
+        });
+        setProducts(parsedData);
+      });
+  }, []);
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
@@ -62,7 +78,6 @@ const Cart = () => {
 
   const calculateShippingCost = (postcode, country) => {
     let cost = 0;
-    // Sample logic to determine shipping cost based on postcode and country
     if (postcode && country) {
       if (country.toLowerCase() === 'usa') {
         cost = 10; // $10 flat rate for USA
@@ -74,8 +89,7 @@ const Cart = () => {
   };
 
   const getItemDetails = (itemId) => {
-    const item = ProductData.find(item => item.id === itemId);
-    return item;
+    return products.find(item => item.id === itemId);
   };
 
   const getTotalValue = () => {
@@ -100,7 +114,7 @@ const Cart = () => {
           {cartItems.map(cartItem => {
             const product = getItemDetails(cartItem.id);
             if (!product) {
-              return null; // Skip rendering if product is not found
+              return null;
             }
             return (
               <div key={cartItem.id}>
@@ -116,33 +130,28 @@ const Cart = () => {
           })}
           {cartItems.length === 0 && <p>Your cart is empty</p>}
           <br />
-          {/* Customer information */}
           <label>First Name:</label>
           <input type="text" value={firstName} onChange={handleFirstNameChange} />
           <br />
           <label>Surname:</label>
           <input type="text" value={surname} onChange={handleSurnameChange} />
           <br />
-          {/* Shipping address */}
           <label>Street:</label>
           <input type="text" value={street} onChange={handleStreetChange} />
           <br />
           <label>City:</label>
           <input type="text" value={city} onChange={handleCityChange} />
           <br />
-          {/* Delivery details */}
           <label>Postcode:</label>
           <input type="text" value={postcode} onChange={handlePostcodeChange} />
           <br />
           <label>Country:</label>
           <input type="text" value={country} onChange={handleCountryChange} />
           <br />
-          {/* Display shipping cost */}
           {postcode && country && (
             <p>Shipping Cost: ${shippingCost.toFixed(2)}</p>
           )}
           <br />
-          {/* Display total value */}
           {cartItems.length > 0 && (
             <div>
               <h3>Total Value: ${getTotalValue().toFixed(2)}</h3>

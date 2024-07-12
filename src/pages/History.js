@@ -1,10 +1,6 @@
 // src/pages/History.js
 
 import React from 'react';
-import image1 from '../assets/graphics/pages/history/qian_xuesen.jpg';
-import image2 from '../assets/graphics/pages/history/cybernetics_feedback_loop_models.png';
-import image3 from '../assets/graphics/pages/history/cyborgisation_flowchart.png';
-import image4 from '../assets/graphics/pages/history/sumeets_xray.png';
 
 const History = () => {
   return (
@@ -31,7 +27,7 @@ const History = () => {
           <p>In 1954 Qian Xuesen also known as Hsue-Shen Tsien (Chinese: 钱学森) (Born: 11th. December, 1911 CE - Death: 31st, October, 2009) a Chinese astrophysicist, aerospace engineer, mathematician, professor and cyberneticist a member of the Manhattan Project along with Albert Einstein, notable for worldwide nuclear technology proliferation and the foundation of the Chinese space agency was placed under prolonged house arrest in the United States of America under false pretence of communist sympathies. </p>
           <p>The allegation was never substantiated. Qian fearing his livelihood eventually ran to safety in China. Before departing the USA his monograph (a scholarly book on a specific subject) on control theory and guided systems named "Engineering Cybernetics" was published. This innovative research laid the foundation for the discipline of "Engineering Cybernetics," encompassing the knowledge and practical application of cybernetics in designing controlled and guided systems, similar to robotics and control engineering.</p>
           <div style={{ textAlign: 'center' }}>
-            <img src={image1} alt="Qian Xuesen drawing on blackboard" style={{ maxWidth: '100%', height: 'auto' }} />
+            <img src="/assets/graphics/pages/history/qian_xuesen.jpg" alt="Qian Xuesen drawing on blackboard" style={{ maxWidth: '100%', height: 'auto' }} />
             <p>Figure 1. Undated photo taken of multi-disciplined scientist and professor Qian Xuesen (錢學森).</p>
           </div>
           <p>Cybernetics has been ill defined throughout our history. The Etymology (history) of the word dates back to ancient Greek terminologies kybernētikḗ (Greek: κυβερνητική), meaning "governance", kybérnēsis (Greek: κυβέρνησις), meaning "government", while  kybernḗtēs (Greek: κυβερνήτης) is the governor, pilot, or "helmsperson" of the "ship". The word cybernetics was first used in the context of "the study of self-governance" by Plato in his works titled "Republic" (around 375 BCE). </p>
@@ -50,7 +46,7 @@ const History = () => {
             <p>Example 2: " Cybernetics can be used compare different systems such as; the study of Human Government, Artificial Intelligence, Bionic prosthetic limbs, Brain-Computer Interfaces or Cyborgs to find out public perceptions.</p>
             <p>Using cybernetics approach to systems analysis by drawing different systems, their inputs, process, outputs, and environmental variables and stimuli, we can observe where human inputs and satisfaction are derived from when interacting with each system, then study and tabulate the results to find conclusions.</p>
             <p>Example 3: "Cyborg; a portmanteau of the words cybernetic and organism, is an organism with biomedically engineered devices (which were discovered from experiments using cybernetics, medical implants and human compatibility) known as "Cyberware" joined together, such as robotic camera eyes in replacement for their pre-existing eyes or bionic prosthetic limbs that are controlled with a brain-computer interface governed by the hosts brain." </p>
-            <img src={image2} alt="Cybernetics feedback loop models" style={{ maxWidth: '100%', height: 'auto' }} />
+            <img src='/assets/graphics/pages/history/cybernetics_feedback_loop_models.png' alt="Cybernetics feedback loop models" style={{ maxWidth: '100%', height: 'auto' }} />
             <p>Figure 2. Two diagrams representing the original and improved models of a Cybernetics Feedback loop. The first top diagram shows the results of a change in a closed loop system being observed first introduced in the Macy Conference discussions by a panel conclusion by multiple experts, whereas the new model introduced in the 2nd order Cybernetics conference in continuation of the Macy Conferences below diagram below shows a second level of observation of the results of the original study.  </p>
           </div>
           <p>As Cybernetics is the explorative approach to nouveau biological and machine systems, new discoveries and subsequent innovations are found to improve functionalities in existing biological systems. The technological and scientific discovery improvements mean the convergence of all these sciences fields can be used to improve the biological self. In example cybernetics is used to explore biocompatibility of engineered medical devices and humans.</p>
@@ -70,14 +66,14 @@ const History = () => {
           <p>Despite the advancements made in the field from a medical science perspective, the philosophical ideas of cyborgs, cyberware, and their effects on society, humans, and the blend between science and fiction has caused a gap to form. The knowledge required has become a barrier to progression, as well as governments ill-advised attempts to adopt new standardization for body autonomy laws on cyberware leading to biohackers, persons who create or implement unregulated biomedical engineering technologies arising.</p>
           <p>To stop the unregulated market of cyberware being created and implanted, and to create a framework for safety guidelines and standards for education, training and law an authority organisation was needed to oversee the creation of such deliverables. </p>
           <div style={{ textAlign: 'center' }}>
-            <img src={image3} alt="Cyborgisation relationship flowchart" style={{ maxWidth: '100%', height: 'auto' }} />
+            <img src='/assets/graphics/pages/history/cyborgisation_flowchart.png' alt="Cyborgisation relationship flowchart" style={{ maxWidth: '100%', height: 'auto' }} />
             <p>Figure 3. The Biomedical Engineering sciences and philosophies relationship flowchart represents the relationship between various etymology, scientific disciplines and biology to draw the relationship between cybernetics, cyberware and cyborgisation. </p>
           </div>
           <p>On November 9th 2021 Sumeet Singh incorporated the world's first Cybernetics, Cyberware and Cyborg clinic, an all encompassing biomedical engineering organisation named Sabrenetics. A universal platform, community and organisation for the open source driven research, education, development of products and support on biomedical engineering related sciences and philosophies ranging from, cyberware, cyborgs and trans/post humanism.</p>
           <p>Born September 18th 1991 in Sydney Australia, from Fijian-South Asian background his journey began at a young age with his fascination of tattoos, body modification, technology and science fiction. He was influenced by media such as Akira (1988), Shadowrun (1994), and Gattaca (1997). He had various piercings and tattoos as early as he was allowed to get them.</p>
           <p>In the early 2010's a chance meeting with Steve Haworth (a pioneer and spokesperson on subdermal body modification) in a Sydney tattoo & piercing parlor occurred leading to him getting his first implant a subdermal magnet in his left ring fingertip. From his newfound experience learning of other biohackers and organisations he further went on to receive many more including his own transdermal implants.</p>
           <div style={{ textAlign: 'center' }}>
-            <img src={image4} alt="Xray of Sumeet Singh's left hand" style={{ maxWidth: '100%', height: 'auto' }} />
+            <img src='/assets/graphics/pages/history/sumeets_xray.png' alt="Xray of Sumeet Singh's left hand" style={{ maxWidth: '100%', height: 'auto' }} />
             <p>Figure 4. A X-ray image of Sumeet Singh's left hand taken sometime around January 2022 at Auburn Healthcare Centre, 4A Auburn Rd, Auburn, NSW, 2144, Australia. showing the presence of 2 subdermal implants. A Magnet under the left ring finger and RFID implant within the thumbs webbing.</p>
           </div>
           <p>A series of events of risky self biohacking procedures and hearing news of unsafe subdermal implant procedures leading to disfigurement and death and concerned with medical facilities lack care on his implants led to deciding to document his findings online for others.</p>

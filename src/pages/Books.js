@@ -1,11 +1,30 @@
-// src/pages/Books.js
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Papa from 'papaparse';
 import AddCartButton from '../components/AddCartButton';
-import ProductData from '../data/ProductData';
 
 const Books = () => {
   const [cart, setCart] = useState([]);
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    fetch('/ProductData.csv')
+      .then(response => response.text())
+      .then(data => {
+        const parsedData = Papa.parse(data, { header: true, dynamicTyping: true }).data;
+        parsedData.forEach(product => {
+          // Ensure images field is defined and not empty before splitting
+          if (product.images) {
+            product.images = product.images.split('|').map(image => image.trim());
+          } else {
+            product.images = []; // Set to empty array if images field is undefined or empty
+          }
+        });
+        setProducts(parsedData);
+      })
+      .catch(error => {
+        console.error('Error fetching or parsing CSV file:', error);
+      });
+  }, []);
 
   const addToCart = (item) => {
     setCart(prevCart => {
@@ -26,14 +45,14 @@ const Books = () => {
             <h1>Books</h1>
           </div>
           <br />
-          {ProductData.map(product => (
+          {products.map(product => (
             <div key={product.id} style={{ marginBottom: '40px' }}>
               <h3>{product.name}</h3>
               <p>{product.description}</p>
               <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-                {product.images.map((image, index) => (
+                {product.images && product.images.map((image, index) => (
                   <React.Fragment key={index}>
-                    <img src={image} alt={`${product.name} ${index + 1}`} className="product-img" />
+                    <img src={process.env.PUBLIC_URL + image} alt={`${product.name} ${index + 1}`} className="product-img" />
                     <br />
                     <br />
                   </React.Fragment>
