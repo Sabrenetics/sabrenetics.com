@@ -1,24 +1,24 @@
-// src/pages/blogs/WritePublishBook.js
+// ../../pages/blogs/WritePublishBook.js
 
 import React from 'react';
-import title from 'src/assets/graphics/pages/blogs/WritePublishBook/title.png';
-import image1 from 'src/assets/graphics/pages/blogs/WritePublishBook/1.png';
-import image8 from 'src/assets/graphics/pages/blogs/WritePublishBook/8.1.png';
-import image8part2 from 'src/assets/graphics/pages/blogs/WritePublishBook/8.2.png';
-import image10 from 'src/assets/graphics/pages/blogs/WritePublishBook/10.png';
-import image13 from 'src/assets/graphics/pages/blogs/WritePublishBook/13.png';
-import image14 from 'src/assets/graphics/pages/blogs/WritePublishBook/14.1.png';
-import image14part2 from 'src/assets/graphics/pages/blogs/WritePublishBook/14.2.png';
-import image14part3 from 'src/assets/graphics/pages/blogs/WritePublishBook/14.3.png';
-import image16 from 'src/assets/graphics/pages/blogs/WritePublishBook/16.png';
-import image22 from 'src/assets/graphics/pages/blogs/WritePublishBook/22.1.png';
-import image22part2 from 'src/assets/graphics/pages/blogs/WritePublishBook/22.2.png';
-import image23 from 'src/assets/graphics/pages/blogs/WritePublishBook/23.1.png';
-import image23part2 from 'src/assets/graphics/pages/blogs/WritePublishBook/23.2.png';
-import image27 from 'src/assets/graphics/pages/blogs/WritePublishBook/27.png';
-import image31 from 'src/assets/graphics/pages/blogs/WritePublishBook/31.1.png';
-import image31part2 from 'src/assets/graphics/pages/blogs/WritePublishBook/31.2.png';
-import image31part3 from 'src/assets/graphics/pages/blogs/WritePublishBook/31.3.png';
+import title from '../../assets/graphics/pages/blogs/WritePublishBook/title.png';
+import image1 from '../../assets/graphics/pages/blogs/WritePublishBook/1.png';
+import image8 from '../../assets/graphics/pages/blogs/WritePublishBook/8.1.png';
+import image8part2 from '../../assets/graphics/pages/blogs/WritePublishBook/8.2.png';
+import image10 from '../../assets/graphics/pages/blogs/WritePublishBook/10.png';
+import image13 from '../../assets/graphics/pages/blogs/WritePublishBook/13.png';
+import image14 from '../../assets/graphics/pages/blogs/WritePublishBook/14.1.png';
+import image14part2 from '../../assets/graphics/pages/blogs/WritePublishBook/14.2.png';
+import image14part3 from '../../assets/graphics/pages/blogs/WritePublishBook/14.3.png';
+import image16 from '../../assets/graphics/pages/blogs/WritePublishBook/16.png';
+import image22 from '../../assets/graphics/pages/blogs/WritePublishBook/22.1.png';
+import image22part2 from '../../assets/graphics/pages/blogs/WritePublishBook/22.2.png';
+import image23 from '../../assets/graphics/pages/blogs/WritePublishBook/23.1.png';
+import image23part2 from '../../assets/graphics/pages/blogs/WritePublishBook/23.2.png';
+import image27 from '../../assets/graphics/pages/blogs/WritePublishBook/27.png';
+import image31 from '../../assets/graphics/pages/blogs/WritePublishBook/31.1.png';
+import image31part2 from '../../assets/graphics/pages/blogs/WritePublishBook/31.2.png';
+import image31part3 from '../../assets/graphics/pages/blogs/WritePublishBook/31.3.png';
 
 const WritePublishBook = () => {
     return (

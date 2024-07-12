@@ -23,7 +23,7 @@ import PrivacyPolicy from './pages/PrivacyPolicy';
 import PurchaseAndRefundPolicy from './pages/PurchaseAndRefundPolicy';
 import SignUp from './pages/SignUp';
 import TermsAndConditions from './pages/TermsAndConditions';
-import WritePublishBook from './pages/WritePublishBook';
+import WritePublishBook from './pages/blogs/WritePublishBook';
 import './App.css';
 
 function App() {
