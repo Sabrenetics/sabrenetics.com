@@ -1,4 +1,7 @@
 // src/components/AddCartButton.js
+// 1. Creates item object to add to the cart
+// 2. Retrieves existing cart items from localStorage, checks if exists then updates quantity or adds a new item
+// 3. Provides User Feedback: It updates the addedToCart state to show a confirmation message when an item is added to the cart.
 
 import React, { useState } from 'react';
 

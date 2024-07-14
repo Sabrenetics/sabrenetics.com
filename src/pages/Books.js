@@ -1,3 +1,5 @@
+// src/pages/Books.js
+
 import React, { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import AddCartButton from '../components/AddCartButton';
@@ -5,6 +7,8 @@ import AddCartButton from '../components/AddCartButton';
 const Books = () => {
   const [cart, setCart] = useState([]);
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [selectedGenre, setSelectedGenre] = useState('All');
 
   useEffect(() => {
     fetch('/ProductData.csv')
@@ -20,6 +24,7 @@ const Books = () => {
           }
         });
         setProducts(parsedData);
+        setFilteredProducts(parsedData); // Set initial filtered products
       })
       .catch(error => {
         console.error('Error fetching or parsing CSV file:', error);
@@ -34,18 +39,35 @@ const Books = () => {
     });
   };
 
+  const handleGenreChange = (genre) => {
+    setSelectedGenre(genre);
+    if (genre === 'All') {
+      setFilteredProducts(products);
+    } else {
+      setFilteredProducts(products.filter(product => product.genre === genre));
+    }
+  };
+
   return (
     <div>
       <div className='main'>
-        <div className="column1"></div>
+        <div className="column1">
+          <h2>Genres</h2>
+          <ul>
+            <li onClick={() => handleGenreChange('All')}>All Books</li>
+            <li onClick={() => handleGenreChange('Medical Technology')}>Medical Technology</li>
+            <li onClick={() => handleGenreChange('Disability')}>Disability</li>
+            {/* Add more genres as needed */}
+          </ul>
+        </div>
         <div className="column2" style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
           <br />
           <br />
           <div style={{ textAlign: 'center', gridColumn: '1' }}>
-            <h1>Books</h1>
+            <h1>{selectedGenre === 'All' ? 'All Books' : selectedGenre}</h1>
           </div>
           <br />
-          {products.map(product => (
+          {filteredProducts.map(product => (
             <div key={product.id} style={{ marginBottom: '40px' }}>
               <h3>{product.name}</h3>
               <p>{product.description}</p>
@@ -79,8 +101,8 @@ const Books = () => {
                 Genre: {product.genre}
                 <br />
                 <AddCartButton
-                  item={product} // Pass the product item itself
-                  format={product} // Pass the entire product as format
+                  item={product}
+                  format={product}
                   onAddToCart={addToCart}
                 />
               </div>
@@ -90,7 +112,6 @@ const Books = () => {
           ))}
         </div>
         <div className="column3">
-          {/* Example: Display cart count */}
           <p>Cart Count: {cart.length}</p>
         </div>
       </div>
