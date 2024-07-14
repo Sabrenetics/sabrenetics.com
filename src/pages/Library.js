@@ -1,8 +1,11 @@
 // src/pages/Library.js
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Library = () => {
+  const navigate = useNavigate(); // useNavigate is a React hook and should be called directly within the component, not within a nested function.
+
   return (
     <div>
       <div className='main'>
@@ -19,6 +22,16 @@ const Library = () => {
           </p>
           <p>
             To the fullest extent of the law, neither the owner developers, authors, contributors, or employees here, assume any liability for any injury and/or damage to persons or property as a matter of products liability, negligence or otherwise, or from any use or operation of any methods, products, instructions, or ideas contained in the material herein.
+          </p>
+          <h2>Articles</h2>
+          <p>
+            <a href="#!" onClick={() => navigate('/PiercingsGuide')}>Piercing Guide</a>
+          </p>
+          <p>
+            <a href="#!" onClick={() => navigate('/Terminologies')}>Terminologies</a>
+          </p>
+          <p>
+            <a href="#!" onClick={() => navigate('/WritePublishBook')}>How to write and publish your own books</a>
           </p>
           <br />
           <b>Cyberware Catalogue</b>

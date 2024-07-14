@@ -9,19 +9,23 @@ import Books from './pages/Books';
 import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import ContactUs from './pages/ContactUs';
-import Cybersecurity from './pages/Cybersecurity';
 import CyborgMuseum from './pages/CyborgMuseum';
+import Cybersecurity from './pages/Cybersecurity';
+import Cyberware from './pages/Cyberware';
 import Events from './pages/Events';
 import History from './pages/History';
 import HomePage from './pages/Homepage';
 import Library from './pages/Library';
 import Login from './pages/Login';
 import Media from './pages/Media';
+import Merchandise from './pages/Merchandise';
 import NotFound from './pages/NotFound';
 import OpenSourceProjects from './pages/OpenSourceProjects';
+import PiercingsGuide from './pages/blogs/PiercingsGuide';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import PurchaseAndRefundPolicy from './pages/PurchaseAndRefundPolicy';
 import SignUp from './pages/SignUp';
+import Terminologies from './pages/blogs/Terminologies';
 import TermsAndConditions from './pages/TermsAndConditions';
 import WritePublishBook from './pages/blogs/WritePublishBook';
 import './App.css';
@@ -48,16 +52,20 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/books" element={<Books />} />
-              <Route path="/cybersecurity" element={<Cybersecurity />} />
               <Route path="/cyborgmuseum" element={<CyborgMuseum />} />
+              <Route path="/cybersecurity" element={<Cybersecurity />} />
+              <Route path="/cyberware" element={<Cyberware />} />
               <Route path="/events" element={<Events />} />
               <Route path="/history" element={<History />} />
               <Route path="/library" element={<Library />} />
               <Route path="/contactus" element={<ContactUs />} />
               <Route path="/media" element={<Media />} />
+              <Route path="/merchandise" element={<Merchandise />} />
               <Route path="/opensourceprojects" element={<OpenSourceProjects />} />
+              <Route path="/piercingsGuide" element={<PiercingsGuide />} />
               <Route path="/privacypolicy" element={<PrivacyPolicy />} />
               <Route path="/PurchaseAndRefundPolicy" element={<PurchaseAndRefundPolicy />} />
+              <Route path="/terminologies" element={<Terminologies />} />
               <Route path="/termsandconditions" element={<TermsAndConditions />} />
               <Route path="/writepublishbook" element={<WritePublishBook />} />
               <Route path="/signup" element={<SignUp />} />
