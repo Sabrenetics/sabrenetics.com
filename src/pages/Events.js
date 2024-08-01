@@ -16,17 +16,10 @@ const Events = () => {
           <br />
           <h3>All Events</h3>
           <p>
-            Our Events are hosted locally in Australia and globally through online live video feeds.
-            Feel free to drop into any at your own discretion.
-          </p>
-          <p>
-            For the full list of events join our Meetups group hosted via Sabrenetics via link here:
-            <a href="https://meet.google.com/nwr-gkzd-eju" target="_blank" rel="noopener noreferrer">
-              Cybernetics, Cyberware and Cyborgs meetups discussion group
-            </a>
+            Our Events are hosted locally in Sydney, Australia but are accessible through Google Meets on the day.
           </p>
           <br />
-          <h3>Ongoing - Cybernetics, Cyberware and Cyborgs Discussion group</h3>
+          <h3>Cybernetics, Cyberware and Cyborgs Discussion group</h3>
           <p><strong>Event:</strong> Cybernetics, Cyberware and Cyborgs meetups discussion group</p>
           <p><strong>Date:</strong> Every 4th Saturday of the month</p>
           <p><strong>Time:</strong> 12:00 pm to 1:00 pm AEDT</p>
@@ -40,7 +33,6 @@ const Events = () => {
             </a>
           </p>
           <p><strong>Audience:</strong> Anyone is welcome from students, to professionals, to hobbyists and more, there's something for everyone. Come join us for food and drinks.</p>
-          <br />
           <p>
             <strong>About:</strong> We're the Cybernetics, Cyberware, Cyborgs and transhuman discussion group. We aim to gather a community to discuss all things from the convergence of medicine, technology, engineering and philosophy. Our goal is to create scientific discourse in order to empower others along the biomedical engineering journey. We discuss all things biomedical engineering. Come join us as we host, participate and discuss in all things;
           </p>

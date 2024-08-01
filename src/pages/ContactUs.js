@@ -17,7 +17,7 @@ const ContactUs = () => {
           <h3>Contact Us Form</h3>
           <ContactUsForm />
           <br />
-          <div>
+          {/* <div>
             <h3>Trading Hours (Australian Standard Eastern Time UTC+10)</h3>
             <ul>
               <li><strong>Monday - Friday:</strong> 9:00 AM - 5:00 PM</li>
@@ -29,7 +29,7 @@ const ContactUs = () => {
             <h3>Email</h3>
             <p><a href="mailto:support@sabrenetics.com">support@sabrenetics.com</a></p>
             <GoogleMapsForm />
-          </div>
+          </div> */}
         </div>
         <div className="column3"></div>
       </div>

@@ -15,7 +15,11 @@ const Homepage = () => {
                     </div>
                     <br />
                     <p>
-                    "Sabrenetics is the world's first cyberware and cyborg clinic for research, standardisation, education, availability and support on Cyberware, Cyborgs and Transhumans."
+                    Our goal is to create a open-source community on using Technology with Medicine to help others.
+                    We talk about things like using 3D printers to print prosthetic arms, movement aids, or using transdermal implants
+                    for sensing and diagnosis. 
+                    We have free articles, books, code base repositories and events on Biomedical Engineering sciences and philosophies
+                    that you're welcome to contribute to anytime!
                     </p>
                 </div>
                 <div className="column3">
