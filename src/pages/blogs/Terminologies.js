@@ -1,12 +1,12 @@
 // src/pages/blogs/Terminologies.js
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Papa from 'papaparse';
 
 const Terminologies = () => {
   const [terms, setTerms] = useState([]);
   const [filteredTerms, setFilteredTerms] = useState([]);
-  const [selectedTerms, setSelectedTerms] = useState('All');
+  const [selectedLetter, setSelectedLetter] = useState('All');
 
   useEffect(() => {
     fetch('/Terminologies.csv')
@@ -22,11 +22,11 @@ const Terminologies = () => {
   }, []);
 
   const handleLetterChange = (letter) => {
-    setSelectedTerms(letter);
+    setSelectedLetter(letter);
     if (letter === 'All') {
-      setFilteredProducts(terms);
+      setFilteredTerms(terms);
     } else {
-      setFilteredProducts(terms.filter(product => product.letter === letter));
+      setFilteredTerms(terms.filter(term => term.Letter === letter));
     }
   };
 
@@ -34,15 +34,46 @@ const Terminologies = () => {
     <div>
       <div className='main'>
         <div className="column1">
-        <h2>LETTERS</h2>
+          <h2>LETTERS</h2>
           <ul>
+            <li onClick={() => handleLetterChange('All')}>All</li>
             <li onClick={() => handleLetterChange('A')}>A</li>
             <li onClick={() => handleLetterChange('B')}>B</li>
             <li onClick={() => handleLetterChange('C')}>C</li>
+            <li onClick={() => handleLetterChange('D')}>D</li>
+            <li onClick={() => handleLetterChange('E')}>E</li>
+            <li onClick={() => handleLetterChange('F')}>F</li>
+            <li onClick={() => handleLetterChange('G')}>G</li>
+            <li onClick={() => handleLetterChange('H')}>H</li>
+            <li onClick={() => handleLetterChange('I')}>I</li>
+            <li onClick={() => handleLetterChange('J')}>J</li>
+            <li onClick={() => handleLetterChange('K')}>K</li>
+            <li onClick={() => handleLetterChange('L')}>L</li>
+            <li onClick={() => handleLetterChange('M')}>M</li>
+            <li onClick={() => handleLetterChange('N')}>N</li>
+            <li onClick={() => handleLetterChange('O')}>O</li>
+            <li onClick={() => handleLetterChange('P')}>P</li>
+            <li onClick={() => handleLetterChange('Q')}>Q</li>
+            <li onClick={() => handleLetterChange('R')}>R</li>
+            <li onClick={() => handleLetterChange('S')}>S</li>
+            <li onClick={() => handleLetterChange('T')}>T</li>
+            <li onClick={() => handleLetterChange('U')}>U</li>
+            <li onClick={() => handleLetterChange('V')}>V</li>
+            <li onClick={() => handleLetterChange('W')}>W</li>
+            <li onClick={() => handleLetterChange('X')}>X</li>
+            <li onClick={() => handleLetterChange('Y')}>Y</li>
+            <li onClick={() => handleLetterChange('Z')}>Z</li>
           </ul>
         </div>
         <div className="column2">
-          <h1>{selectedLetter === 'All' ? 'All Books' : selectedLetter}</h1>
+          <h1>{selectedLetter === 'All' ? 'All Terms' : selectedLetter}</h1>
+          <ul>
+            {filteredTerms.map((term, index) => (
+              <li key={index}>
+                <strong>{term.Terminology}</strong>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="column3"></div>
       </div>
