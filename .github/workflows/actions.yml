@@ -23,6 +23,7 @@ jobs:
       
       - name: Build React app
         env:
+          CI: true # enables additional logging in react
           REACT_APP_GOOGLE_MAPS_API_KEY: ${{ secrets.REACT_APP_GOOGLE_MAPS_API_KEY }}
         run: npm run build
       
