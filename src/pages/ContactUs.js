@@ -1,7 +1,7 @@
 // src/pages/ContactUs.js
 
 import React from 'react';
-import GoogleMapsForm from '../components/GoogleMapsForm';
+// import GoogleMapsForm from '../components/GoogleMapsForm';
 import ContactUsForm from '../components/backend/ContactUsForm';
 
 const ContactUs = () => {
