@@ -5,7 +5,7 @@ Author: Sumeet Singh
 
 Dated: 26/06/2024
 
-Website for Biomedical Engineering Standards company Sabrenetics @ sabrenetics.com
+Website for Sabrenetics @ sabrenetics.com
 
 ## STACK
  * Frontend - React
