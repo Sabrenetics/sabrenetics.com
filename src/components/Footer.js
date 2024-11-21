@@ -10,8 +10,8 @@ const Footer = () => {
         <h3>Quick links</h3>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/History">History</Link></li>
-          <li><Link to="/events">Events</Link></li>
+          {/* <li><Link to="/History">History</Link></li>
+          <li><Link to="/events">Events</Link></li> */}
           <li><Link to="/privacypolicy">Privacy Policy</Link></li>
           <li><Link to="/PurchaseAndRefundPolicy">Purchase and Refund Policy</Link></li>
           <li><Link to="/termsandconditions">Terms and Conditions</Link></li>
@@ -21,7 +21,7 @@ const Footer = () => {
       <div className="footercolumn">
         <h3>Mission</h3>
         <p>
-          "Sabrenetics is the world's first cyberware and cyborg clinic for research, standardisation, education, availability and support on Cyberware, Cyborgs and Transhumans."
+          "Sabrenetics is a open source community for learning all about science!"
         </p>
       </div>
       <div className="footercolumn">
