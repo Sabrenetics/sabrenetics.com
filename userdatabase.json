@@ -1,0 +1,26 @@
+[
+    {
+      "userid": 1,
+      "creation_date": "2024-01-15",
+      "username": "jdoe",
+      "lastname": "Doe",
+      "dob": "1990-02-10",
+      "mailinglist": true,
+      "password": "$2a$10$KIX8eU0FgXq0ZoFl9bZyPejG72pFV88hMvh3l9pkOEPdyEQ.9c1yG",
+      "orders": [
+        {
+          "order_id": 101,
+          "product": "Laptop",
+          "amount": 1299.99,
+          "date": "2024-06-01"
+        },
+        {
+          "order_id": 102,
+          "product": "Mouse",
+          "amount": 29.99,
+          "date": "2024-07-21"
+        }
+      ]
+    }
+  ]
+  
