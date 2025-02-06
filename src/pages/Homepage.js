@@ -19,8 +19,8 @@ const Homepage = () => {
                     Our goal is to create a open-source community on using Technology with Medicine to help others.
                     We talk about things like volunteering in healthcare using technology such as using 3D printers to print prosthetic 
                     arms, movement aids, or using transdermal implants for sensing and diagnosis. 
-                    {/* We have free articles, books, code base repositories and events on Biomedical Engineering sciences and philosophies
-                    that you're welcome to contribute to anytime! */}
+                    We have free articles, books, code base repositories and events on Biomedical Engineering sciences and philosophies
+                    that you're welcome to contribute to anytime!
                     </p>
                 </div>
                 <div className="column3">

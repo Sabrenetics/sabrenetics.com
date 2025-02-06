@@ -1,8 +1,8 @@
-// src/pages/blogs/PiercingsGuide.js
+// src/pages/blogs/LearnCosmeticPiercingForBeginners.js
 
 import React from 'react';
 
-const PiercingsGuide = () => {
+const LearnCosmeticPiercingForBeginners = () => {
   return (
     <div>
       <div className='main'>
@@ -86,4 +86,4 @@ const PiercingsGuide = () => {
   );
 };
 
-export default PiercingsGuide;
+export default LearnCosmeticPiercingForBeginners;

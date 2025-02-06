@@ -11,7 +11,7 @@ const CyborgMuseum = () => {
           <br />
           <br />
           <div style={{ textAlign: 'center' }}>
-            <h1>CyborgMuseum</h1>
+            <h1>Cyborg Museum</h1>
           </div>
           <p>
             The Cybernetics, Cyberware, and Cyborg Museum project has been temporarily suspended due to financial constraints. Originally envisioned as a public gallery showcasing historically significant cyberware and cyborg models, the project awaits sufficient funding to proceed.
