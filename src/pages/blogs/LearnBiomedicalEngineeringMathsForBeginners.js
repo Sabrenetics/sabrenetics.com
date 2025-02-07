@@ -1,8 +1,8 @@
-// src/pages/blogs/LearnECGForBeginners.js
+// src/pages/blogs/LearnBiomedicalEngineeringMathsForBeginners.js
 
 import React from 'react';
 
-const LearnECGForBeginners = () => {
+const LearnBiomedicalEngineeringMathsForBeginners = () => {
   return (
     <div>
       <div className='main'>
@@ -11,7 +11,7 @@ const LearnECGForBeginners = () => {
           <br />
           <br />
           <div style={{ textAlign: 'center' }}>
-            <h1>Learn ECG For Beginners</h1>
+            <h1>LearnBiomedicalEngineeringMathsForBeginners</h1>
           </div>
           <p>
             Our Events are hosted locally in Australia and globally through online live video feeds.
@@ -24,4 +24,4 @@ const LearnECGForBeginners = () => {
   );
 };
 
-export default LearnECGForBeginners;
+export default LearnBiomedicalEngineeringMathsForBeginners;

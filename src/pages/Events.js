@@ -28,8 +28,8 @@ const Events = () => {
           <p>
             <strong>Online link:</strong> Please advise beforehand by contacting{' '}
             <a href="mailto:support@sabrenetics.com">support@sabrenetics.com</a> or through Meetups link above before joining for us to be notified to start the Google Meet link for remote participants:
-            <a href="https://meet.google.com/nwr-gkzd-eju" target="_blank" rel="noopener noreferrer">
-              https://meet.google.com/nwr-gkzd-eju
+            <a href="https://meet.google.com/nwr-gkzd-eju?pli=1" target="_blank" rel="noopener noreferrer">
+            https://meet.google.com/nwr-gkzd-eju?pli=1
             </a>
           </p>
           <p><strong>Audience:</strong> Anyone is welcome from students, to professionals, to hobbyists and more, there's something for everyone. Come join us for food and drinks.</p>

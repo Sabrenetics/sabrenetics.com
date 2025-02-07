@@ -17,12 +17,13 @@ import Events from './pages/Events';
 import History from './pages/History';
 import HomePage from './pages/Homepage';
 import Library from './pages/Library';
+import LearnBiomedicalEngineeringMathsForBeginners from './pages/blogs/LearnBiomedicalEngineeringMathsForBeginners';
 import LearnBookPublishingCourse from './pages/blogs/LearnBookPublishingCourse';
 import LearnCompanionAIForBeginners from './pages/blogs/LearnCompanionAIForBeginners';
 import LearnCosmeticPiercingForBeginners from './pages/blogs/LearnCosmeticPiercingForBeginners';
 import LearnCyberwareCourse from './pages/blogs/LearnCyberwareCourse';
 import LearnECGForBeginners from './pages/blogs/LearnECGForBeginners';
-import LearnNeruoScienceForBeginners from './pages/blogs/LearnNeruoScienceForBeginners';
+import LearnNeuroscienceForBeginners from './pages/blogs/LearnNeuroscienceForBeginners';
 import LearnProgrammingForBeginners from './pages/blogs/LearnProgrammingForBeginners';
 import LearnRFIDForBeginners from './pages/blogs/LearnRFIDForBeginners';
 import Login from './pages/Login';
@@ -67,12 +68,13 @@ function App() {
               <Route path="/events" element={<Events />} />
               <Route path="/history" element={<History />} />
               <Route path="/library" element={<Library />} />
+              <Route path="/LearnBiomedicalEngineeringMathsForBeginners" element={<LearnBiomedicalEngineeringMathsForBeginners />} />
               <Route path="/LearnBookPublishingCourse" element={<LearnBookPublishingCourse />} />
               <Route path="/LearnCompanionAIForBeginners" element={<LearnCompanionAIForBeginners />} />
               <Route path="/LearnCosmeticPiercingForBeginners" element={<LearnCosmeticPiercingForBeginners />} />
               <Route path="/LearnCyberwareCourse" element={<LearnCyberwareCourse />} />
               <Route path="/LearnECGForBeginners" element={<LearnECGForBeginners />} />
-              <Route path="/LearnNeruoScienceForBeginners" element={<LearnNeruoScienceForBeginners />} />
+              <Route path="/LearnNeuroscienceForBeginners" element={<LearnNeuroscienceForBeginners />} />
               <Route path="/LearnProgrammingForBeginners" element={<LearnProgrammingForBeginners />} />
               <Route path="/LearnRFIDForBeginners" element={<LearnRFIDForBeginners />} />
               <Route path="/media" element={<Media />} />

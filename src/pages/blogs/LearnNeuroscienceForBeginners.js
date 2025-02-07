@@ -1,8 +1,8 @@
-// src/pages/blogs/LearnNeruoscienceForBeginners.js
+// src/pages/blogs/LearnNeuroscienceForBeginners.js
 
 import React from 'react';
 
-const LearnNeruoscienceForBeginners = () => {
+const LearnNeuroscienceForBeginners = () => {
   return (
     <div>
       <div className='main'>
@@ -11,7 +11,7 @@ const LearnNeruoscienceForBeginners = () => {
           <br />
           <br />
           <div style={{ textAlign: 'center' }}>
-            <h1>LearnNeruoscienceForBeginners</h1>
+            <h1>Learn Neuroscience For Beginners</h1>
           </div>
           <p>
             Our Events are hosted locally in Australia and globally through online live video feeds.
@@ -24,4 +24,4 @@ const LearnNeruoscienceForBeginners = () => {
   );
 };
 
-export default LearnNeruoscienceForBeginners;
+export default LearnNeuroscienceForBeginners;
