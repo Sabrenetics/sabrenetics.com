@@ -19,7 +19,6 @@ import HomePage from './pages/Homepage';
 import Library from './pages/Library';
 import LearnBiomedicalEngineeringMathsForBeginners from './pages/blogs/LearnBiomedicalEngineeringMathsForBeginners';
 import LearnBookPublishingCourse from './pages/blogs/LearnBookPublishingCourse';
-import LearnCompanionAIForBeginners from './pages/blogs/LearnCompanionAIForBeginners';
 import LearnCosmeticPiercingForBeginners from './pages/blogs/LearnCosmeticPiercingForBeginners';
 import LearnCyberwareCourse from './pages/blogs/LearnCyberwareCourse';
 import LearnECGForBeginners from './pages/blogs/LearnECGForBeginners';
@@ -70,7 +69,6 @@ function App() {
               <Route path="/library" element={<Library />} />
               <Route path="/LearnBiomedicalEngineeringMathsForBeginners" element={<LearnBiomedicalEngineeringMathsForBeginners />} />
               <Route path="/LearnBookPublishingCourse" element={<LearnBookPublishingCourse />} />
-              <Route path="/LearnCompanionAIForBeginners" element={<LearnCompanionAIForBeginners />} />
               <Route path="/LearnCosmeticPiercingForBeginners" element={<LearnCosmeticPiercingForBeginners />} />
               <Route path="/LearnCyberwareCourse" element={<LearnCyberwareCourse />} />
               <Route path="/LearnECGForBeginners" element={<LearnECGForBeginners />} />

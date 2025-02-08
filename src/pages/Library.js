@@ -39,9 +39,6 @@ const Library = () => {
           <br />
           <h2>Short Courses For Beginners</h2>
           <p>
-            <a href="#!" onClick={() => navigate('/LearnCompanionAIForBeginners')}>Learn Companion AI for Beginners</a>
-          </p>
-          <p>
             <a href="#!" onClick={() => navigate('/LearnCosmeticPiercingForBeginners')}>Learn Cosmetic Piercing for Beginners</a>
           </p>
           <p>

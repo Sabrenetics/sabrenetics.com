@@ -14,7 +14,6 @@ const NotFound = () => {
             </div>
             <br />
             <p>Error 404: The page you are looking for doesn't exist. Use the search bar to navigate elsewhere.</p>
-            <p>Email: kurta.kursi@gmail.com for any questions</p>
           </p>
         </div>
         <div className="column3">

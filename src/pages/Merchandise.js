@@ -12,11 +12,10 @@ const Merchandise = () => {
           <br />
           <p>
             <div style={{ textAlign: 'center' }}>
-              <h1>Merchandse</h1>
+              <h1>Merchandise</h1>
             </div>
             <br />
             <p>Error 404: The page you are looking for doesn't exist. Use the search bar to navigate elsewhere.</p>
-            <p>Email: kurta.kursi@gmail.com for any questions</p>
           </p>
         </div>
         <div className="column3">
