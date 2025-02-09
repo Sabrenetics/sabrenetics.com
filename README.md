@@ -56,7 +56,7 @@ SubscribeMailingListButton.js (S3) -> xxx (Lambda) -> /public/userdatabase.json 
 UnsubscribeMailingListButton.js (S3) -> xxx (Lambda) -> /public/userdatabase.json (s3)
 ContactUsForm.js (S3) -> www.formspree.io -> sends email to support@sabrenetis.com gmail
 
-## Building, Testing and Deploying
+## BUILDING, TESTING & DEPLOYING
 * Locally (Dev) - To run locally follow these steps
 1. Run Server.js in a seperate terminal instance to replicate all the AWS Lambda (node.js)/API Gateway code for logins etc.,
 2. In a new terminal run
